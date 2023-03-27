@@ -1,0 +1,21 @@
+[flake8]
+max-complexity = 8
+max-line-length = 120
+max-function-length = 20
+# type hints
+min-coverage-percents = 100
+extend-ignore =
+    WPS306 # object inheritance
+    WPS602 # @staticmethod
+    WPS605 # method without arguments
+    D107 # docstring init
+    WPS430 # nested func
+    WPS323 # false-positive %-formatting in logging
+    WPS305 # f-string
+    D210 # whitespaces allowed surrounding docstring text
+    D400 # first line should end with a period
+    D100 # docstring in public module
+    G004 # logging statement uses f-string
+    PIE803 # prefer-logging-interpolation: Use lazy % formatting in logging functions
+    ANN101 # missing type annotation for self in method
+    ANN204 # missing return type annotation for special method
